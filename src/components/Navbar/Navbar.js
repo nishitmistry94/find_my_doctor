@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import logo from "../../assets/logo.png"
 import "./Navbar.css"
@@ -56,12 +56,12 @@ function Navbar() {
                         (<>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/auth">
+                                    <Link className="nav-link active" aria-current="page" to="/login">
                                     <button className="log">Login</button>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/auth"><button className="log">Sign Up</button></Link>
+                                    <Link className="nav-link" to="/signup"><button className="log">Sign Up</button></Link>
                                 </li>
                             </ul>
                         </>)

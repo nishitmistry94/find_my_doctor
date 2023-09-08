@@ -10,7 +10,8 @@ function App() {
     <div>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/auth' element={<Auth/>}></Route>
+        <Route path='/login' element={<Auth props={"Login"}/>}></Route>
+        <Route path='/signup' element={<Auth props={"Sign up"}/>}></Route>
        
       </Routes>
     </div>

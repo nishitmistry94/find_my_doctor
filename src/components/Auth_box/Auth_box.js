@@ -4,10 +4,8 @@ import img1 from "../../assets/7.jpeg"
 import img2 from "../../assets/8.jpeg"
 import MediaQuery from 'react-responsive'
 import { Link } from 'react-router-dom'
-function Login_box() {
-    const auth_type="Login"
-    
-    
+function Login_box(props) {
+    const auth_type=props.props
   return (
     <div className='main'>
         <div className='sideImage'> 
@@ -18,7 +16,7 @@ function Login_box() {
             </div>
         <div className="form">
             <div className='formHeader'>
-                Patient {auth_type}
+                {auth_type}
             </div>
             <p>
                 Enter your details to {auth_type.toLowerCase()}
@@ -41,8 +39,19 @@ function Login_box() {
                 </Link>
                 <button class="submit">{auth_type}</button>
             </form>
-            <div className='signup_link' onClick={()=>{}}>
-                {auth_type=="Login"?("Don't have an account"):("Already have an account")}
+            <div className='acc_link' onClick={()=>{}}>
+                {auth_type=="Login"?
+                    (<Link style={{textDecoration:"none"}} to="/signup">
+                        <div style={{color: "#49535a"}} >
+                            Don't have an account
+                        </div>
+                    </Link>)
+                    :
+                    (<Link style={{textDecoration:"none"}} to="/login">
+                        <div style={{color: "#49535a"}} >
+                            Already have an account
+                        </div>
+                    </Link>)}
             </div>
         </div>
     </div>
