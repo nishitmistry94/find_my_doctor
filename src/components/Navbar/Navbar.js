@@ -56,12 +56,12 @@ function Navbar() {
                         (<>
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" to="/">
+                                    <Link className="nav-link active" aria-current="page" to="/auth">
                                     <button className="log">Login</button>
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/"><button className="log">Sign Up</button></Link>
+                                    <Link className="nav-link" to="/auth"><button className="log">Sign Up</button></Link>
                                 </li>
                             </ul>
                         </>)

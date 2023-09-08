@@ -1,6 +1,6 @@
 import React from 'react'
-import "./LogIn.css"
-import Login_box from '../../components/login_box/Login_box'
+import "./Auth.css"
+import Login_box from '../../components/Auth_box/Auth_box'
 function LogIn() {
   return (
     <div className='Login'>
