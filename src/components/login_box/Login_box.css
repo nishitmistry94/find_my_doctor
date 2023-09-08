@@ -4,16 +4,23 @@
     overflow: hidden;
     background-color: white;
 }
-@media only screen and (max-width:1024) {
+@media screen and (min-width:360px) {
     .form{
-        height:80vh;
+        min-width: 350px;
+    }
+}
+@media screen and (max-width:360px) {
+    .form{
+        min-width: 300px;
     }
 }
 p{
     color: #49535a;
 }
 .form{
+    height:80vh;
     width: 35vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,3 +69,11 @@ form{
     box-shadow: 0 0 20px rgba(42, 127, 186, 0.6);
     background-color: rgba(42, 127, 186, 1);
   }
+.trouble_link{
+    margin:5px 0px;
+    color: #49535a;
+}
+.signup_link{
+    color: #49535a;
+    margin:10px 0px;
+}

@@ -3,9 +3,10 @@ import "./Login_box.css"
 import img1 from "../../assets/7.jpeg"
 import img2 from "../../assets/8.jpeg"
 import MediaQuery from 'react-responsive'
+import { Link } from 'react-router-dom'
 function Login_box() {
     const auth_type="Login"
-
+    
   return (
     <div className='main'>
         <div className='sideImage'> 
@@ -27,8 +28,18 @@ function Login_box() {
                 </input>
                 <input type='password' placeholder='Enter your password'>
                 </input>
+                <Link style={{textDecoration:"none"}}>
+                    <div className='trouble_link'>
+                        Having trouble logging in 
+                    </div>
+                </Link>
                 <button class="submit">{auth_type}</button>
             </form>
+            <Link style={{textDecoration:"none"}}>
+            <div className='signup_link'>
+                    Don't have an account 
+            </div>
+            </Link>
         </div>
     </div>
   )

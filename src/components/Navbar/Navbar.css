@@ -2,9 +2,8 @@
 
 }
     
-@media only screen and (max-width: 992px) {
-   
-}
+
+
 #end-search-bar{
     display: flex;
     width: 100%;
@@ -24,7 +23,7 @@ nav{
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    margin: 30px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -116,8 +115,7 @@ nav{
     border-radius: 10px;
     font-weight: 600;
     margin: 0 5px;
-    width: 100px;
-    padding: 5px 0;
+    padding: 7px 40px;
     box-shadow: 0 0 20px rgba(42, 127, 186, 0.2);
     transition: 0.4s;
   }
@@ -133,3 +131,16 @@ nav{
     background-color: rgba(42, 127, 186, 1);
   }
   
+  @media only screen and (max-width: 992px) {
+    .navbar{
+      backdrop-filter: blur(5px);
+    }
+    .log{
+      width:90vw;
+    }
+    .navbar-nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
