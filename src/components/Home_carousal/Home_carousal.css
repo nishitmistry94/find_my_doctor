@@ -1,0 +1,64 @@
+.carousal-box img{
+height: 200px;
+border-radius: 5px;
+}
+.Home_carousel{
+  margin: 24px 0px;
+}
+.slick-carousel {
+    margin:auto;
+    width: 80vw;
+  }
+
+  .slick-arrow{
+    width:50px;
+  }
+  .slick-next::before, .slick-prev::before {
+    font-size: 50px;
+    color: black;
+  }
+  .slick-prev{
+      left: -70px !important;
+        top: 0!important;
+        height: 100%!important;
+        transform: none!important;
+        z-index: 1;
+  }
+  .slick-next{
+    right: -50px !important;
+    width: unset!important;
+    top: 0!important;
+    height: 100%!important;
+    transform: none!important;
+    z-index: 1;
+}
+.carousel_des{
+  font-size:medium;
+  width: 80%;
+  line-height: 20px;
+}
+.carousel_heading{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.slick-disabled{
+  display:none !important;
+}
+.Section2_main{
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 46px;
+}
+.Section2_heading{ 
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+h3{
+  text-align: center;
+  max-width: 575px;
+}

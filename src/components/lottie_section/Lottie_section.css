@@ -1,0 +1,24 @@
+.Lottie_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0px;   
+}
+.Lottie_heading{
+    font-size: 4rem;
+    font-weight: bolder;
+
+}
+lottie-player{
+    width: 40vw;
+}
+.Lottie_body{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.Lottie_des{
+    width: 50%;
+    text-align: center;
+}

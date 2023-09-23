@@ -2,8 +2,6 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './screens/Home/Home';
 import Auth from './screens/Auth/Auth';
-import SignUp from './screens/SignUp/SignUp';
-
 function App() {
   return (
       <BrowserRouter>

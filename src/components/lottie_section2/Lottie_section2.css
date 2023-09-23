@@ -1,0 +1,19 @@
+.Lottie_section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:24px 0px;   
+}
+lottie-player{
+    width: 40vw;
+}
+.Lottie_body{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.Lottie_des{
+    width: 50%;
+    text-align: center;
+}
